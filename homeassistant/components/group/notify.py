@@ -47,7 +47,6 @@ def add_defaults(
 async def async_get_service(
     hass: HomeAssistant,
     config: ConfigType,
-    discovery_info: DiscoveryInfoType | None = None,
 ) -> GroupNotifyPlatform:
     """Get the Group notification service."""
     return GroupNotifyPlatform(hass, config[CONF_SERVICES])
