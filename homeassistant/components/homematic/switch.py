@@ -13,8 +13,6 @@ from .entity import HMDevice
 
 
 def setup_platform(
-    hass: HomeAssistant,
-    config: ConfigType,
     add_entities: AddEntitiesCallback,
     discovery_info: DiscoveryInfoType | None = None,
 ) -> None:
