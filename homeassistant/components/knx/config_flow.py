@@ -766,7 +766,7 @@ class KNXOptionsFlow(KNXCommonFlow, OptionsFlow):
         return self.async_create_entry(title="", data={})
 
     async def async_step_init(
-        self, user_input: dict[str, Any] | None = None
+        self, 
     ) -> FlowResult:
         """Manage KNX options."""
         return self.async_show_menu(

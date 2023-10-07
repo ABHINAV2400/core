@@ -29,7 +29,6 @@ from .schema import SwitchSchema
 
 async def async_setup_entry(
     hass: HomeAssistant,
-    config_entry: config_entries.ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
     """Set up switch(es) for KNX platform."""

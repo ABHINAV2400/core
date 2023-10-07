@@ -17,7 +17,6 @@ from .schema import NotifySchema
 
 async def async_get_service(
     hass: HomeAssistant,
-    config: ConfigType,
     discovery_info: DiscoveryInfoType | None = None,
 ) -> KNXNotificationService | None:
     """Get the KNX notification service."""
