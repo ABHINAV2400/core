@@ -37,7 +37,7 @@ OPTIONS = "options"
 CONFIG_SCHEMA = cv.removed(DOMAIN, raise_if_present=False)
 
 
-async def async_get_device_config(hass, config_entry):
+async def async_get_device_config(hass):
     """Initiate the connection and services."""
     # Make a copy of addresses due to edge case where the list of devices could
     # change during status update
@@ -75,7 +75,7 @@ async def close_insteon_connection(*args):
     await async_close()
 
 
-async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
+async def async_setup() -> bool:
     """Set up the Insteon platform."""
     return True
 

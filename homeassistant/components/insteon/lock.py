@@ -16,7 +16,6 @@ from .utils import async_add_insteon_devices, async_add_insteon_entities
 
 async def async_setup_entry(
     hass: HomeAssistant,
-    config_entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
     """Set up the Insteon locks from a config entry."""
