@@ -63,7 +63,6 @@ async def async_setup_platform(
     hass: HomeAssistant,
     config: ConfigType,
     async_add_entities: AddEntitiesCallback,
-    discovery_info: DiscoveryInfoType | None = None,
 ) -> None:
     """Set up the template lock."""
     async_add_entities(await _async_create_entities(hass, config))
